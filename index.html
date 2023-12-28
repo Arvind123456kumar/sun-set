@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sun</title>
+    <style>
+       body{
+        display: flex;
+      
+            background-color: rgb(194, 194, 188);
+            transition: all 1s ease-in-out  1s;
+        }
+        #suns{
+            width: 200px;
+            height: 200px;
+            border-radius: 150px;
+        margin-top: 60px;
+            box-shadow:5px 4px 100px rgb(30, 26, 26);
+            background-image: repeating-radial-gradient(#b8af0b ,rgb(217, 14, 14));
+            animation: beat 20s infinite;
+            transform: translateX(500%);
+        }
+        @keyframes beat {
+            0% {
+                transform: translateZ(-50%);
+                transform: scale(1.8) rotate(-45deg);
+            }
+            100% {
+                transform: scale(0.3) rotate(-45deg)
+            }
+        }
+    </style>
+</head>
+<body>
+  <div id="sun">
+    <div id="suns"></div>
+  </div>  
+</body>
+</html>
